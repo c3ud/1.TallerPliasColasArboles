@@ -8,6 +8,12 @@
 
 # DISCOS DE DAZA
 
- en proceso
+terminado
 
 # OPERACION
+terminado
+
+#INTEGRANTES:
+
+DWAN FELIPE VELOZA PAEZ     20142020098
+DIEGO HERNANDEZ             20141020271
