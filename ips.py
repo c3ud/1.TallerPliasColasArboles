@@ -1,6 +1,7 @@
 #como evitar libs.patiens
 from libs.patient import Patient
 from libs.cola import Cola
+from libs.pila import Pila
 
 import random
 
@@ -22,11 +23,15 @@ queuePriority.encolar(p3)
 
 
 def printPatientInfo(aux):
-	print(aux.name)
-	print(aux.age)
-	print(aux.gender)
-	print(aux.priority)
+	print("Nombre 	 : " + aux.name)
+	print("Edad   	 : " + str(aux.age))
+	print("Genero    : " + aux.gender)
+	print("Prioridad : " + str(aux.priority))
 
+
+#def ordenar(p):
+#	pilaAux = Pila()
+#	while p.priority
 
 ##Dont change random
 def inputPatient():
