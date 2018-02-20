@@ -1,15 +1,12 @@
 #como evitar libs.patiens
-from libs.Patient import Patient
+from libs.patient import Patient
 from libs.cola import Cola
 
 import random
 
-
-
 # creacion de colas
 queueNormal = Cola()
 queuePriority = Cola()
-
 
 ## patiens by default
 print("Runnig Creando pacientes")

@@ -2,7 +2,7 @@
 class Pila:
     """ Representa una pila con operaciones de apilar, desapilar y
         verificar si está vacía. """
- 
+
     def __init__(self):
         """ Crea una pila vacía. """
         # La pila vacía se representa con una lista vacía

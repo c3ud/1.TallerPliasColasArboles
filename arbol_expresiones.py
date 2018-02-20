@@ -1,5 +1,5 @@
-from pila import *
-from arbol import *
+from libs.pila import Pila
+from libs.arbol import Nodo
 
 def convertir(lista, pila):
     if lista != []:
@@ -10,7 +10,7 @@ def convertir(lista, pila):
         else:
             pila.apilar(Nodo(lista[0]))
         return convertir(lista[1:],pila)
-            
+
 
 def evaluar(arbol):
     if arbol.valor == "+":
@@ -22,7 +22,7 @@ def evaluar(arbol):
     if arbol.valor == "*":
         return evaluar(arbol.izq) * evaluar(arbol.der)
     return int(arbol.valor)
-    
+
 exp = raw_input("ingrese l expresion en posfija: ").split(" ")
 
 pila = Pila()
@@ -30,4 +30,3 @@ pila = Pila()
 convertir(exp, pila)
 
 print evaluar(pila.desapilar())
-
